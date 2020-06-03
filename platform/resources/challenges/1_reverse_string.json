@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "filename": "1_reverse_string.json",
+        "difficulty": 1,
+        "points": 10,
+        "name": "Reverse a string",
+        "description": "Just take any given string and output it in reverse, pretty easy, right?",
+    },
+    "abstract": {
+        "instructions": "Your input variable could contain a variety of string values. Regardless of value, you'll need to reverse the string and print it out.",
+        "inputs": [
+            "The string to reverse"
+        ],
+        "sample_tests": [
+            {
+                "title": "Simple string",
+                "inputs": ["cat"],
+                "output": "tac"
+            }
+        ]
+    },
+    "tests": [
+        {
+            "name": "Testing simple string",
+            "cases": [
+                {
+                    "input": ["engineer man"],
+                    "output": "nam reenigne"
+                },
+                {
+                    "input": ["cat"],
+                    "output": "tac"
+                },
+                {
+                    "input": ["reverse me :)"],
+                    "output": "): em esrever"
+                },
+                {
+                    "input": ["1234567890"],
+                    "output": "0987654321"
+                }
+            ]
+        },
+        {
+            "name": "Testing complex string",
+            "input": [
+                {
+                    "input": ["a,masd#$)(&*09&M0d7fn0s8$*&4876%*&7dnosydhf)"],
+                    "output": ")fhdysond7&*%6784&*$8s0nf7d0M&90*&()$#dsam,a",
+                },
+                {
+                    "input": ["===================****#$#$"],
+                    "output": "$#$#****===================",
+                },
+                {
+                    "input": ["sd9f6 9s8d6f9 8 s"],
+                    "output": "s 8 9f6d8s9 6f9ds",
+                },
+                {
+                    "input": ["78^*&^((((((((((((((()))))))))))))))"],
+                    "output": ")))))))))))))))(((((((((((((((^&*^87"
+                }
+            ]
+        }
+    ]
+}
