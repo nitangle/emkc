@@ -147,5 +147,15 @@ module.exports = {
         return res.view({
             snippet
         });
+    },
+
+    async get_json(req, res) {
+        const { hash } = req.params;
+        let snippet = await db.snippets.find_one({
+            where: { hash }
+        });
+        return res.status(200).send({
+           snippet
+        });
     }
 };
